@@ -3,6 +3,7 @@
 function getSetup() {
     fetch('http://webtest.multiverseworks.com/triple-triad/game/setup', {
         header: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: "code=4817309482740283402"
     })
     .then(resp => resp.json())
     .then(json => console.log(json))
